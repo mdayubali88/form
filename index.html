@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-design{
+            background: rgb(239, 238, 238);
+            width: 800px;
+            margin: auto;   
+            padding: 10px;
+        }
+        #form_name{
+            display: block;
+        }
+        form{
+            width: 80%;
+            background: white;
+            margin: 20px auto;
+            padding: 20px;    
+        }
+        form input[type='text'],
+        input[type='password'],
+        input[type='tel'],
+        input[type='date'],
+        input[type='email'],
+        input[type='number'],
+        select{
+            display: block;
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        select{
+            width: 94% !important;
+        }
+        label{
+            display: inline-block;
+            margin-bottom:3px;
+        }
+       
+        button{
+            font-size: 18px;
+            padding: 8px 12px;
+            margin: 0px 60px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-design">
+        <form id="form_name">
+            <label for="uname">User Name</label>
+            <input type="text" id="uname" placeholder="Enter Your Name" required>
+            <label for="email">User Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <label for="phone">User Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Your Number">
+            <label for="option">User Option</label>
+            <select name="option" id="option">
+                <option value="option-1">Option 1</option>
+                <option value="option-2" selected>Option 2</option>
+                <option value="option-3">Option 3</option>
+                <option value="option-4">Option 4</option>
+                <option value="option-5">Option 5</option>
+            </select>
+            <label for="">User Gender</label>
+            <br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" name="gender" id="others">
+            <label for="others">Other</label>
+            <br>
+            <label for="">User Hobies</label>
+            <br>
+            <input type="checkbox" name="male" id="">
+            <label for="">Playing Game</label>
+            <br>
+            <input type="checkbox" name="female" id="">
+            <label for="">Watching Movie</label>
+            <br>
+            <input type="checkbox" name="others" id="">
+            <label for="">Coding</label>
+            <br>
+            <label for="date">Date Select</label>
+            <input type="date" name="date" value="2023-07-22" id="date">
+            <label for="class">Class Select</label>
+            <input type="number" name="number" value="03" readonly>
+            <input type="submit" value="Submit">
+        </form>
+        <button type="submit" form="form_name" >Reset</button>
+    </div>
+</body>
+</html>
